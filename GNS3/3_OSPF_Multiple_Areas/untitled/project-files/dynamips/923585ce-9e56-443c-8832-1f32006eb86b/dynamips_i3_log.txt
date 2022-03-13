@@ -1,0 +1,68 @@
+Oct 20 10:24:49.537 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 20 10:24:49.537 HYPERVISOR: Started on IP = localhost, TCP port = 55613.
+Oct 20 10:24:49.547 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 10:24:49.548 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips 
+Oct 20 10:24:49.548 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips
+Oct 20 10:24:49.548 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips/88287e75-8bdb-4f99-9ab1-b687c645a50b 
+Oct 20 10:24:49.548 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips/88287e75-8bdb-4f99-9ab1-b687c645a50b
+Oct 20 10:24:49.548 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Oct 20 10:24:49.549 VM: VM R1 created.
+Oct 20 10:24:49.549 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 20 10:24:49.550 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Oct 20 10:24:49.550 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 20 10:24:49.550 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:24:49.550 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a68e70 
+Oct 20 10:24:49.551 HYPERVISOR: exec_cmd: vm set_ios R1 /home/inryatt/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 20 10:24:49.551 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.8427.0000 
+Oct 20 10:24:49.551 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 20 10:24:49.551 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:24:49.551 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Oct 20 10:24:49.552 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:24:49.552 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Oct 20 10:24:49.704 HYPERVISOR: exec_cmd: nio create_udp udp-f74d89e8-10fa-4a27-a306-33741433045c 10004 127.0.0.1 10005 
+Oct 20 10:24:49.919 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-f74d89e8-10fa-4a27-a306-33741433045c 
+Oct 20 10:24:49.920 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:24:54.206 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 20 10:24:54.206 VM: VM Ghost created.
+Oct 20 10:24:54.208 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/inryatt/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 20 10:24:54.212 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 20 10:24:54.214 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 20 10:24:54.217 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 10:24:54.219 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Oct 20 10:24:54.222 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 20 10:24:54.579 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 10:24:54.580 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 20 10:24:54.634 VM: VM Ghost shutdown.
+Oct 20 10:24:54.635 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 20 10:24:54.635 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 20 10:24:54.635 VM: VM Ghost destroyed.
+Oct 20 10:24:54.637 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 20 10:24:54.637 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 20 10:24:54.637 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:24:54.638 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Oct 20 10:24:54.638 HYPERVISOR: exec_cmd: vm start R1 
+Oct 20 10:29:54.891 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:29:54.902 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:45:37.362 HYPERVISOR: exec_cmd: nio create_udp udp-42d0611d-5f5d-4bfa-b3dd-be463e89354c 10024 127.0.0.1 10025 
+Oct 20 10:45:37.364 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-42d0611d-5f5d-4bfa-b3dd-be463e89354c 
+Oct 20 10:45:37.364 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:45:37.365 HYPERVISOR: exec_cmd: vm slot_enable_nio R1 0 1 
+Oct 20 10:50:25.067 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:50:25.119 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:51:25.079 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:51:25.128 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:55:55.124 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:55:55.136 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:56:55.133 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:56:55.182 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:59:23.583 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:59:23.586 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 20 10:59:23.690 VM: VM R1 shutdown.
+Oct 20 10:59:23.691 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:59:24.328 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 20 10:59:24.328 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 20 10:59:24.330 HYPERVISOR: exec_cmd: vm delete R1 
+Oct 20 10:59:24.330 VM: VM R1 destroyed.
+Oct 20 10:59:24.340 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 10:59:24.547 HYPERVISOR: Stopped.
+Oct 20 10:59:24.547 GENERAL: reset done.

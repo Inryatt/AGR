@@ -1,0 +1,66 @@
+Oct 20 08:16:16.678 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 20 08:16:16.678 HYPERVISOR: Started on IP = localhost, TCP port = 53185.
+Oct 20 08:16:16.688 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 08:16:16.688 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips 
+Oct 20 08:16:16.688 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips
+Oct 20 08:16:16.688 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips/bafbc5a8-3a92-4bf9-b35a-a5450d57efb4 
+Oct 20 08:16:16.688 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips/bafbc5a8-3a92-4bf9-b35a-a5450d57efb4
+Oct 20 08:16:16.689 HYPERVISOR: exec_cmd: vm create Switch_1 2 c3725 
+Oct 20 08:16:16.689 VM: VM Switch_1 created.
+Oct 20 08:16:16.689 HYPERVISOR: exec_cmd: vm set_con_tcp_port Switch_1 5001 
+Oct 20 08:16:16.689 HYPERVISOR: exec_cmd: c3725 get_mac_addr Switch_1 
+Oct 20 08:16:16.689 HYPERVISOR: exec_cmd: vm set_disk0 Switch_1 1 
+Oct 20 08:16:16.690 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:16.690 HYPERVISOR: exec_cmd: vm set_idle_pc Switch_1 0x60a6a1e0 
+Oct 20 08:16:16.690 HYPERVISOR: exec_cmd: vm set_ios Switch_1 /home/inryatt/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 20 08:16:16.690 HYPERVISOR: exec_cmd: c3725 set_mac_addr Switch_1 c202.4812.0000 
+Oct 20 08:16:16.691 HYPERVISOR: exec_cmd: vm set_nvram Switch_1 256 
+Oct 20 08:16:16.691 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:16.691 HYPERVISOR: exec_cmd: vm slot_add_binding Switch_1 1 0 NM-16ESW 
+Oct 20 08:16:16.691 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:16.691 HYPERVISOR: exec_cmd: vm slot_add_binding Switch_1 2 0 NM-1FE-TX 
+Oct 20 08:16:17.023 HYPERVISOR: exec_cmd: nio create_udp udp-4e1a8a15-4044-4b60-accf-7941a211246a 10004 127.0.0.1 10005 
+Oct 20 08:16:17.243 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch_1 1 14 udp-4e1a8a15-4044-4b60-accf-7941a211246a 
+Oct 20 08:16:17.244 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:17.549 HYPERVISOR: exec_cmd: nio create_udp udp-10690b2b-87b5-4da1-b640-8e434f623c05 10016 127.0.0.1 10017 
+Oct 20 08:16:17.550 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch_1 0 0 udp-10690b2b-87b5-4da1-b640-8e434f623c05 
+Oct 20 08:16:17.550 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:17.597 HYPERVISOR: exec_cmd: nio create_udp udp-229280cc-8820-49ff-8c30-b6ff51454e0c 10026 127.0.0.1 10027 
+Oct 20 08:16:17.598 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch_1 1 0 udp-229280cc-8820-49ff-8c30-b6ff51454e0c 
+Oct 20 08:16:17.598 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:17.623 HYPERVISOR: exec_cmd: nio create_udp udp-19d04381-3077-4bb8-88bc-dcd3a90c748f 10030 127.0.0.1 10031 
+Oct 20 08:16:17.624 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch_1 1 3 udp-19d04381-3077-4bb8-88bc-dcd3a90c748f 
+Oct 20 08:16:17.625 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:17.649 HYPERVISOR: exec_cmd: nio create_udp udp-8dab0e0c-bacc-40cc-a970-9e15b62b9cc3 10034 127.0.0.1 10035 
+Oct 20 08:16:17.650 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch_1 1 6 udp-8dab0e0c-bacc-40cc-a970-9e15b62b9cc3 
+Oct 20 08:16:17.650 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:20.313 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 20 08:16:20.314 VM: VM Ghost created.
+Oct 20 08:16:20.316 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/inryatt/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 20 08:16:20.317 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 20 08:16:20.318 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 20 08:16:20.319 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 08:16:20.320 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Oct 20 08:16:20.320 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 20 08:16:20.616 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 08:16:20.616 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 20 08:16:20.777 VM: VM Ghost shutdown.
+Oct 20 08:16:20.778 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 20 08:16:20.780 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 20 08:16:20.780 VM: VM Ghost destroyed.
+Oct 20 08:16:20.783 HYPERVISOR: exec_cmd: vm set_ghost_status Switch_1 2 
+Oct 20 08:16:20.784 HYPERVISOR: exec_cmd: vm set_ghost_file Switch_1 /home/inryatt/Uni/3ano/AGR/GNS3/1_GNS3_INTRO/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 20 08:16:20.785 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:16:20.786 HYPERVISOR: exec_cmd: vm set_config Switch_1 configs/i2_startup-config.cfg 
+Oct 20 08:16:20.787 HYPERVISOR: exec_cmd: vm start Switch_1 
+Oct 20 08:20:30.167 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:20:30.167 HYPERVISOR: exec_cmd: vm stop Switch_1 
+Oct 20 08:20:30.329 VM: VM Switch_1 shutdown.
+Oct 20 08:20:30.329 HYPERVISOR: exec_cmd: vm extract_config Switch_1 
+Oct 20 08:20:30.410 HYPERVISOR: exec_cmd: vm get_status Switch_1 
+Oct 20 08:20:30.411 HYPERVISOR: exec_cmd: vm extract_config Switch_1 
+Oct 20 08:20:30.413 HYPERVISOR: exec_cmd: vm delete Switch_1 
+Oct 20 08:20:30.413 VM: VM Switch_1 destroyed.
+Oct 20 08:20:30.414 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 08:20:30.469 HYPERVISOR: Stopped.
+Oct 20 08:20:30.469 GENERAL: reset done.

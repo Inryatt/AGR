@@ -1,0 +1,19 @@
+AGR Lab 2
+
+=======Switch 1&2===========
+
+vlan database
+vlan 2
+exit
+conf t
+interface FastEthernet 1/0
+switchport access vlan 2
+interface range FastEthernet 1/13 - 15
+channel-group 1 mode on                 # Cria um grupo para as interfaces 1/13-15
+interface Port-channel 1
+switchport mode trunk
+end 
+write
+
+==
+Como estamos na mesma rede local, não é necessário Gateway nos PCs.

@@ -1,0 +1,36 @@
+Dec 15 09:34:27.785 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 15 09:34:27.785 HYPERVISOR: Started on IP = localhost, TCP port = 53757.
+Dec 15 09:34:27.794 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 15 09:34:27.794 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/BGP/project-files/dynamips 
+Dec 15 09:34:27.794 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/BGP/project-files/dynamips
+Dec 15 09:34:27.794 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/BGP/project-files/dynamips/b8dade05-ede3-416e-8b1c-d6afb0507db8 
+Dec 15 09:34:27.794 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/BGP/project-files/dynamips/b8dade05-ede3-416e-8b1c-d6afb0507db8
+Dec 15 09:34:27.795 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Dec 15 09:34:27.795 VM: VM R3 created.
+Dec 15 09:34:27.795 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Dec 15 09:34:27.795 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Dec 15 09:34:27.796 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 15 09:34:27.796 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:34:27.796 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
+Dec 15 09:34:27.797 HYPERVISOR: exec_cmd: vm set_ios R3 /home/inryatt/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 15 09:34:27.797 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c203.3391.0000 
+Dec 15 09:34:27.797 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 15 09:34:27.797 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:34:27.798 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 15 09:34:27.798 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:34:27.798 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-1T 
+Dec 15 09:34:40.225 HYPERVISOR: exec_cmd: nio create_udp udp-80b693e7-8cca-4362-8f93-888b3194350c 10002 127.0.0.1 10003 
+Dec 15 09:34:40.450 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-80b693e7-8cca-4362-8f93-888b3194350c 
+Dec 15 09:34:40.451 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:34:51.308 HYPERVISOR: exec_cmd: nio create_udp udp-169ebf67-f6ce-4f11-883c-41ab4db2f214 10022 127.0.0.1 10023 
+Dec 15 09:34:51.310 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-169ebf67-f6ce-4f11-883c-41ab4db2f214 
+Dec 15 09:34:51.310 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:46:25.199 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Dec 15 09:46:25.202 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/inryatt/Uni/3ano/AGR/GNS3/BGP/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 15 09:46:25.203 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 09:46:25.204 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Dec 15 09:46:25.206 HYPERVISOR: exec_cmd: vm start R3 
+Dec 15 11:09:47.401 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 15 11:09:47.402 HYPERVISOR: exec_cmd: vm stop R3 
+Dec 15 11:09:47.555 VM: VM R3 shutdown.
+Dec 15 11:09:47.557 HYPERVISOR: exec_cmd: vm extract_config R3 

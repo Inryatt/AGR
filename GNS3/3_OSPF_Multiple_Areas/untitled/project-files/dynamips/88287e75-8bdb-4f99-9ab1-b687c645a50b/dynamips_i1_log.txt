@@ -1,0 +1,16 @@
+Oct 20 10:24:49.475 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 20 10:24:49.475 HYPERVISOR: Started on IP = localhost, TCP port = 54565.
+Oct 20 10:24:49.479 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 10:24:49.480 HYPERVISOR: exec_cmd: hypervisor working_dir /home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips 
+Oct 20 10:24:49.480 GENERAL: working_dir=/home/inryatt/Uni/3ano/AGR/GNS3/3_OSPF_Multiple_Areas/untitled/project-files/dynamips
+Oct 20 10:24:49.480 HYPERVISOR: exec_cmd: nio_bridge create Hub1 
+Oct 20 10:24:49.659 HYPERVISOR: exec_cmd: nio create_udp udp-d13abf0d-30b0-4af3-86f2-7a89fe05ac8f 10001 127.0.0.1 10000 
+Oct 20 10:24:49.659 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-d13abf0d-30b0-4af3-86f2-7a89fe05ac8f 
+Oct 20 10:24:49.932 HYPERVISOR: exec_cmd: nio create_udp udp-bbcf9991-2d7d-4f03-a096-9b622f18cec4 10003 127.0.0.1 10002 
+Oct 20 10:24:49.932 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-bbcf9991-2d7d-4f03-a096-9b622f18cec4 
+Oct 20 10:24:49.985 HYPERVISOR: exec_cmd: nio create_udp udp-b10957b1-cf43-4a8d-ba16-dc70becc9557 10006 127.0.0.1 10007 
+Oct 20 10:24:49.985 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-b10957b1-cf43-4a8d-ba16-dc70becc9557 
+Oct 20 10:59:24.136 HYPERVISOR: exec_cmd: nio_bridge delete Hub1 
+Oct 20 10:59:24.194 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 10:59:24.487 HYPERVISOR: Stopped.
+Oct 20 10:59:24.488 GENERAL: reset done.
